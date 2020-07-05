@@ -77,16 +77,16 @@ def ourside_in(y):
 
 
 # Evalulate the value of variable "y" we declared in the function.
->>> y
-NameError: name 'y' is not defined
+y
+# NameError: name 'y' is not defined
 
 
 def inside_out(x = 1):
 	return x
 
 # Evalulate the value of variable "x" from the function, after giving it a default value.
->>> x
-NameError: name 'x' is not defined
+x
+#NameError: name 'x' is not defined
 
 # Parameters work like variables, and just as in Example 3 above, are inaccessable outside of the function itself. Tested assigning a value to a parameter within a function, and also assigning a default value to a parameter (known also as a Keyword Argument). the Trying to call a parameter value outside of it's function results in a NameError, since the interpreter recognizes this a an undefined variable.
 ## Non-Default (Required) Argument VS Default (Keyword) Arguments = Non-Default Argument MUST come before a Default Argument
