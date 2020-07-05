@@ -93,9 +93,11 @@ def get_input():
     if word_a == word_b:        # If the two words are the same, avoid an error.
         print('These words are the same, please enter different words.')
         get_input()             # Start over!
-
-    else:
-        letter_checker(word_a, word_b, 0)
+    elif len(word_a) < len(word_b):
+        word_a = word_a + ' '*(len(word_b) - len(word_a))
+    elif len(word_a) > len(word_b):
+        word_b = word_b + ' '*(len(word_a) - len(word_b))
+    return letter_checker(word_a, word_b)
 
 
 get_input()
