@@ -81,3 +81,16 @@ def check_me(a, b, c):
     """This demonstrates that each of three values are compared
     between eachother, the second two don't compare against the first."""
     return a > b != c
+
+
+# IsInstance Function.
+def check_value(n):
+    """IsInstance function returns boolean if type."""
+
+    if not isinstance(n, int) or n < 0:
+        print('This is not a positive integer.')
+    else:
+        return n, 'is valid.'
+
+
+# check_value(9.0)
