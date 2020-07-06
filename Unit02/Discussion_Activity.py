@@ -15,7 +15,6 @@ print(le_taunter("hamster", "elderberries"))
                 # hamster and elderberries are the Arguments, passed into the function as required parameters.
 
 
-
 # Example 2:
 # Call your function from Example 1 three times with different kinds of arguments:
 # a value, a variable, and an expression. Identify which kind of argument is which.
