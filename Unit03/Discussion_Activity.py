@@ -55,13 +55,14 @@ def nested_conditional(word_a, word_b):
     else:
         print(word_b, word_a)
 
+
 def ask_for_words():
     word_a = input('Enter a word to alphatize: ')
     word_b = input('Enter another word to alpabetize: ')
     nested_conditional(word_a, word_b)
 
 
-#ask_for_words()
+# ask_for_words()
 
 
 
