@@ -22,7 +22,6 @@ def to_piglatin(term, position=0):
 # If consenant or group, move behind first vowel and add 'ay'
 
 
-# Get Sentence
 def get_sentence():
     """User inputted string, converts it to a list. """
 
@@ -32,7 +31,7 @@ def get_sentence():
 
 
 def translate_sen(senlist, pos=0):
-
+    """Iterates through each word of list, calls to_piglatin prints each."""
     output = ''
     while pos < len(senlist):
         output = output + to_piglatin(senlist[pos]) + ' '
