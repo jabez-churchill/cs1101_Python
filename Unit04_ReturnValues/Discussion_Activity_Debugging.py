@@ -92,7 +92,7 @@ def find_first_vowel_v3(term, position):
         return str('There are vowels in this word.')
     else:
         position += 1
-        find_first_vowel_v2(term, position)
+        find_first_vowel_v3(term, position)
 
 
 def get_user_input_v2():
