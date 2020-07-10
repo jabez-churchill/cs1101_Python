@@ -46,6 +46,7 @@ def hypotenuse(a, b):
     return math.sqrt(a**2 + b**2)
 
 
+# Test if function works:
 # hypotenuse(3, 4)
 
 
@@ -56,6 +57,7 @@ def circle_area(xc, yc, xp, yp):
     return area(distance(xc, yc, xp, yp))
 
 
+# Test if function works:
 # circle_area(1, 2, 4, 6)
 
 
