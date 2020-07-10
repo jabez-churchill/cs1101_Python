@@ -1,5 +1,4 @@
 import math
-# Part One - - - - - - - - - - - - - - - - - - -
 
 
 # STEP 01
@@ -35,17 +34,15 @@ def hypotenuse_v3(a, b):
 
 # STEP 04
 def hypotenuse(a, b):  # Remove scaffolding, as long as code is understandable.
+    """Returns the length of the hypotenuse of a right triangle given
+    the lengths of the other two legs as arguments"""
     return (math.sqrt(a**2 + b**2))
 
 
 # Final Call
 hypotenuse(3, 4)
-hypotenuse(5, 12)
-hypotenuse(80, 18)
-
-# >>> hypotenuse(3, 4)
 # 5.0
-# >>> hypotenuse(5, 12)
+hypotenuse(5, 12)
 # 13.0
-# >>> hypotenuse(80, 18)
+hypotenuse(80, 18)
 # 82.0
