@@ -1,6 +1,5 @@
 # Pig Latin Translator
 vowel = set(['a', 'e', 'i', 'o', 'u', 'y'])
-# illegal = set(['.', '!', '?'])
 
 
 def to_piglatin(term, position=0):
