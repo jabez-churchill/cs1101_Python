@@ -8,6 +8,7 @@ def to_piglatin(term, position=0):
 
     while term[position] not in vowel and position < len(term):
         position += 1
+
     if term[position] in vowel and position == 0:
         return str(term + 'yay')
     elif term[position] in vowel or position == len(term)-1:
