@@ -43,7 +43,7 @@ any_lowercase2('Try')
 any_lowercase2('TRY')
 # True
 
-# This function uses string objects inappropreatly. The first if statement is
+# This function uses string objects inappropriately. The first if statement is
 # evaluating a string object 'c' and will always evaulate to True.
 
 
@@ -92,8 +92,15 @@ def any_lowercase4(s):
 
 # OUTPUT
 any_lowercase4('try')
-any_lowercase4('Try')
 any_lowercase4('TRY')
+any_lowercase4('Try')
+# T False
+# to  False
+# r False
+# to  True
+# y True
+# to  True
+# True
 any_lowercase4('TrY')
 # T False
 # to  False
@@ -131,13 +138,13 @@ any_lowercase5('trY')
 
 # This is almost a good function, but it's backwards. The idea here is to
 # end the loop at some point instead of iterating through characters needlessly
-# but it breaks when ANY capial letter is found. The point of this function is
+# but it breaks when ANY capital letter is found. The point of this function is
 # to find if any lower case letters are in a string. A working example of
 # breaking a loop, would be breaking when any lower case letter is found, else
-# return True. Example:
+# return True.
 
 
-def any_lowercase6(s):
+def any_lowercase(s):
     for c in s:
         if c.islower():
             return True
@@ -145,13 +152,13 @@ def any_lowercase6(s):
 
 
 # OUTPUT
-any_lowercase6('try')
+any_lowercase('try')
 # True
-any_lowercase6('Try')
+any_lowercase('Try')
 # True
-any_lowercase6('TRY')
+any_lowercase('TRY')
 # False
-any_lowercase6('TrY')
+any_lowercase('TrY')
 # True
-any_lowercase6('trY')
+any_lowercase('trY')
 # True
