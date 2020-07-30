@@ -16,7 +16,7 @@ def character_ages(chars):
         print(i["user_name"], 'is', i["age"])
 
 
-character_ages(character_list)
+# character_ages(character_list)
 
 
 def show_keys(dicts):
@@ -27,4 +27,47 @@ def show_keys(dicts):
         print("")
 
 
-show_keys(character_list)
+# show_keys(character_list)
+
+
+eng2thai = dict()
+
+eng2thai['one'] = 'neung'
+eng2thai['two'] = 'song'
+eng2thai['three'] = 'sam'
+eng2thai['four'] = 'si'
+eng2thai['five'] = 'ha'
+
+# Dict Constructor
+comic_universe = dict(
+    Superman='DC',
+    Batman='DC',
+    Ironman='Marvel',
+    Spawn='Dark Horse',
+    BlackPanther='Marvel'
+
+)
+
+# Check if value is in...
+'Marvel' in comic_universe.values()
+
+# Check if key is in...
+'Superman' in comic_universe.keys()
+
+
+# Histogram
+def histogram(iterable_object):
+    d = dict()
+    for one_item in iterable_object:  # for EACH in ITERABLE
+        if one_item not in iterable_object:  # Not in dict yet
+            d[one_item] = 1  # Add one to new key
+        else:
+            d[one_item] += 1  # Increment existing key
+    return d
+
+
+histogram('chronic')
+# {'c': 2, 'h': 1, 'r': 1, 'o': 1, 'n': 1, 'i': 1}
+
+histogram(comic_universe.values())
+# {'DC': 2, 'Marvel': 2, 'Dark Horse': 1}
