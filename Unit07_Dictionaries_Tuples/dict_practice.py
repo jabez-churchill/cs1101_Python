@@ -71,3 +71,23 @@ histogram('chronic')
 
 histogram(comic_universe.values())
 # {'DC': 2, 'Marvel': 2, 'Dark Horse': 1}
+
+
+# Get method
+eng2thai.get('six', 0)
+# 0
+
+eng2thai.get('one', 0)
+# 'neung'
+
+
+# Histogram with GET method
+def myhistogram(s):
+    d = dict()
+    for count in s:
+        d.get(count, 1)
+        d[count] += 1
+    return d
+
+
+myhistogram('chronic')
