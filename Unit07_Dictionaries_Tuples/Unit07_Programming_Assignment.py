@@ -21,23 +21,24 @@ def histogram(s):
 # returns True if the string has any repeated characters. Otherwise, it
 # should return False.
 def has_duplicates(a_string):
-    letters = histogram(a_string)
-    for letter in letters.values():
-        if letter > 1:
+    letters = histogram(a_string)  # Store the histogram function result.
+    for letter in letters.values():  # Iterates through each value.
+        if letter > 1:  # If more than one instance is found...
             return True
-    return False
+    return False  # The loop finished the whole word without finding duplicate.
 
 
 # Write a loop over the strings in the provided test_dups list. Print each
 # string in the list and whether or not it has any duplicates.
 print("")
 print("Part 1: Loop over test_dups and print if each has duplicates or not.")
+print("_"*70)
 
 for i in test_dups:
     if has_duplicates(i):
-        print("√", i, "has duplicates.")
+        print(i, "has duplicates.")
     else:
-        print("X", i, "has no duplicates")
+        print(i, "has no duplicates")
 
 
 # PART TWO
@@ -59,9 +60,10 @@ def missing_letters(a_string):
 # string. Print a line for each string listing the missing letters.
 print("")
 print("Part 2: Print a line for each string listing the missing letters.")
+print("_"*70)
 
 for i in test_miss:
-    if missing_letters(i):  # If return not NoneType
+    if missing_letters(i):  # If not returning NoneType
         print(i, "is missing letters", missing_letters(i))
-    else:  # Returned None
+    else:  # Returned None, has all letters.
         print(i, "uses all the letters.")
