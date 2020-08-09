@@ -31,6 +31,7 @@ def invert_dict2(d):
                 inverse[list].append(key)  # Add to existing.
     return inverse
 
+
 print("_"*69)
 print("Original dictionary.")
 print(gifts_someday)

@@ -42,6 +42,7 @@ def select_file():
         select_file()
 
 
+# Output:
 select_file()
 # Enter name of file to open: nerd.txt
 # File not in current directory.
@@ -53,3 +54,16 @@ select_file()
 
 
 # EXAMPLE THREE
+# We can specify the type of error to react to, to make error messages more
+# useful in identifying or resolving problems.
+def open_something(to_open):
+    try:
+        cwd = os.getcwd()
+        open(cwd + "/" + to_open, "r")
+    except IsADirectoryError:
+        print("Can't open directory as file.")
+
+
+# Output:
+open_something('github')
+# Can't open directory as file.
